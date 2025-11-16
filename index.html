@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДеревьЯ</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./assets/icons/smalllogo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>ДеревьЯ</p>
+        </div>
+        <button class="butgreen">Учавствовать</button>
+    </header>
+    <section class="firstblock">
+        <div class="textbox">
+            <h1>Каждое дерево — это ваш вклад в будущее наших детей</h1>
+            <p>Мы высаживаем леса на месте пожаров и вырубок. Прозрачно, с отчётами и реальным результатом</p>
+            <div class="contbut">
+                <button class="butwhite">Учавствовать</button>
+                <button class="without">Для компаний</button>
+            </div>
+        </div>
+        <div class="infobox">
+            <img src="./assets/icons/up.svg" alt="↑">
+            <div class="regbox">
+                <div class="regtextbox">
+                    <p class="up">Примите участие!</p>
+                    <p class="down">Каждый сажанец - это ваш вклад в восстановление леса. Выберите формат участие и начните традицию</p>
+                </div>
+                <div class="reglog">
+                    <div class="left">
+                        <div class="gblock selected" data-type="private">
+                            <div class="textblock">
+                                <h3 class="hgreen">Частное лицо</h3>
+                                <p class="pgreen">Покупка саженцев для участия</p>
+                            </div>
+                        </div>
+                        <div class="gblock black" data-type="men">
+                            <div class="textblock">
+                                <h3 class="hgreen hblack">Посвящение в мужчины</h3>
+                                <p class="pgreen pblack">Ритуал для отца и сына</p>
+                            </div>
+                        </div>
+                        <div class="gblock black" data-type="wedding">
+                            <div class="textblock">
+                                <h3 class="hgreen hblack">Свадебное дерево</h3>
+                                <p class="pgreen pblack">Традиция для молодожёнов</p>
+                            </div>
+                        </div>
+                        <div class="gblock black" data-type="glory">
+                            <div class="textblock">
+                                <h3 class="hgreen hblack">Роща славы</h3>
+                                <p class="pgreen pblack">В честь участников СВО</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="first">
+                            <div class="rblock">
+                                <div class="up">
+                                    <img src="./assets/icons/email.svg" alt="img">
+                                    <p>Email</p>
+                                </div>
+                                <input type="text" placeholder="Введите свой Email">
+                            </div>
+                            <div class="rblock">
+                                <div class="up">
+                                    <img src="./assets/icons/phone.svg" alt="img">
+                                    <p>Номер телефона</p>
+                                </div>
+                                <input type="text" placeholder="Введите свой номер телефона">
+                            </div>
+                            <div class="rblock">
+                                <div class="up">
+                                    <p>Имя</p>
+                                </div>
+                                <input type="text" placeholder="Введите своё имя">
+                            </div>
+                            <div class="rblock">
+                                <div class="up">
+                                    <img src="./assets/icons/loc.svg" alt="img">
+                                    <p>Выберите город</p>
+                                </div>
+                                <select class="city" name="city">
+                            <option value="" disabled selected>Выберите город для участия</option>
+                            <option value="Самара">Самара</option>
+                            <option value="Тольятти">Тольятти</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Ульяновск">Ульяновск</option>
+                            <option value="Другой">Другой</option>
+                        </select>
+                            </div>
+                        </div>
+                        <div class="second" id="seed-block">
+                            <p class="up">Количество саженцев:</p>
+                            <input type="number" id="seed-input" placeholder="0" min="1" max="100">
+                            <p class="down">От 1 до 100 саженцев</p>
+                        </div>
+                        <div class="second" id="cost-block">
+                            <p class="up">Итоговая сумма:</p>
+                            <div class="cost" id="cost-value">0 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="withoutgreen">Записаться</button>
+        </div>
+    </section>
+    <section class="secblock">
+        <h2>Для компаний</h2>
+        <div class="cardbox">
+            <div class="card">
+                <div class="head">
+                    <h4>1 гектар</h4>
+                    <p>Для малого и среднего бизнеса</p>
+                </div>
+                <div class="price">
+                    <p class="sum">500 000</p>
+                    <p class="rub">₽</p>
+                </div>
+                <div class="featlist">
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Сертификат шефства над гектаром</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Отличительный знак в офис</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Упоминание на сайте проекта</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Фотоотчёт с посадки</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Возможность участия сотрудников</p>
+                    </div>
+                </div>
+                <button class="withoutgreen">Отправить заявку</button>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <h4>10 гектаров</h4>
+                    <p>Для крупных компаний</p>
+                </div>
+                <div class="price">
+                    <p class="sum">4 500 000</p>
+                    <p class="rub">₽</p>
+                </div>
+                <div class="featlist">
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Всё из предыдущего тарифа</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Именная табличка на территории леса</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Видеоотчёт с квадрокоптера</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>PR-поддержка и пресс-релиз</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Ежегодные отчёты о росте леса</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Корпоративное мероприятие на участке</p>
+                    </div>
+                </div>
+                <button class="color">Отправить заявку</button>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <h4>100 гектаров</h4>
+                    <p>Для федеральных компаний</p>
+                </div>
+                <div class="price">
+                    <p class="sum">40 000 000</p>
+                    <p class="rub">₽</p>
+                </div>
+                <div class="featlist">
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Всё из предыдущего тарифа</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>VIP-доступ для партнёров и клиентов</p>
+                    </div>
+                    <div class="list">
+                        <img src="./assets/icons/check.svg" alt="img">
+                        <p>Федеральное освещение в СМИ</p>
+                    </div>
+                </div>
+                <button class="withoutgreen">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
+    <section class="woodmen">
+        <div class="woodcard">
+            <img src="./assets/img/nothing.png" alt="img">
+            <div class="woodtext">
+                <h4>Посади дерево. Стань мужчиной.</h4>
+                <p>5 000 ₽ — вклад в лес и в характер ребёнка <br>Мужчина — это не про «бороду отрастил». Это про ответственность. Один мальчик сажает одно дерево — и в этот момент у него появляется что-то своё: живое, растущее, зависимое от него. <br><br>Раз
+                    в год мы проводим ритуал посвящения в мужчины. Отец и сын выходят на землю, берут в руки лопаты и сажают дерево. Не в теории, не в «когда-нибудь», а здесь и сейчас.</p>
+            </div>
+        </div>
+        <div class="woodcard">
+            <img src="./assets/img/nothing.png" alt="img">
+            <div class="woodtext">
+                <h4>Свадебное дерево: <br>вместо очередного букета — корни в земле</h4>
+                <p>Свадьба заканчивается, фото блекнут, торт съели и забыли. Но если в день росписи вы сажаете своё дерево — память становится живой. Каждая семья после ЗАГСа может поехать не в ТЦ, а на свою первую совместную посадку. <br><br>Дерево растёт
+                    вместе с вами: переживает ветра, морозы, засуху. Как и семья: главное — не бросать, ухаживать и возвращаться.</p>
+            </div>
+        </div>
+        <div class="woodcard">
+            <img src="./assets/img/nothing.png" alt="img">
+            <div class="woodtext">
+                <h4>Роща славы. <br>Дерево, которое держит память</h4>
+                <p>Есть вещи, которые словами не лечатся. Когда отец на фронте. Когда его уже нет. Когда ребёнку нужно во что-то упереться, кроме пустоты. Мы создаём Рощу славы — живой мемориал, где дети с мамами сажают деревья в честь своих защитников.
+                    У каждого дерева — имя. У каждой семьи — место, куда можно приходить, обнимать ствол и говорить то, что не сказано. Дерево растёт. Так же, как растёт ребёнок. И каждый раз, когда он смотрит на крону, он знает: «Папа был. Папа есть
+                    в этой земле. И я продолжаю».</p>
+            </div>
+        </div>
+    </section>
+    <section class="graph">
+        <div class="graphtext">
+            <h4>Почему это актуально?</h4>
+            <p>Леса России – это глобальные "лёгкие" планеты. Но мы ежегодно теряем миллионы гектаров из-за вырубки и огня. Скорость уничтожения катастрофически опережает темпы восстановления. <br>Пришло время выйти за рамки "лайков" об экологии и перейти
+                к реальным шагам.</p>
+        </div>
+        <img src="./assets/img/graph.png" alt="graphic">
+    </section>
+    <section class="videoblock">
+        <h2>Наши посадки:</h2>
+        <p class="mero">За прошедший год мы организовали множество мероприятий по всей России. Тысячи людей уже присоединились к нашему зелёному движению.</p>
+        <div class="videocard">
+            <div class="videofirst">
+                <iframe src="https://vkvideo.ru/video_ext.php?oid=-217297073&id=456239137&hash=f66b642854aa7297" height="240" border-radius="16" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="videobody">
+                    <div class="textinfo">
+                        <h4>Эко-волонтеры Газпрома</h4>
+                        <p class="oblast">Тверская область</p>
+                        <p class="date">Март 2024</p>
+                    </div>
+                    <div class="info">
+                        <p class="people">80 чел.</p>
+                        <p class="people">1 500 саженцев</p>
+                    </div>
+                    <a href="#">
+                        <p class="people">Call to action →</p>
+                    </a>
+                </div>
+            </div>
+            <div class="videofirst">
+                <iframe src="https://vkvideo.ru/video_ext.php?oid=-89594340&id=456247168&hash=661b45d81bc41087" height="240" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="videobody">
+                    <div class="textinfo">
+                        <h4>Добровольцы сажают лес</h4>
+                        <p class="oblast">Владимирская область</p>
+                        <p class="date">Апрель 2024</p>
+                    </div>
+                    <div class="info">
+                        <p class="people">300 чел.</p>
+                        <p class="people">7 000 саженцев</p>
+                    </div>
+                    <a href="#">
+                        <p class="people">Call to action →</p>
+                    </a>
+                </div>
+            </div>
+            <div class="videofirst">
+                <iframe src="https://vkvideo.ru/video_ext.php?oid=-214553576&id=456240479&hash=ef5003efde33a81f" height="240" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="videobody">
+                    <div class="textinfo">
+                        <h4>Экологическая акция "Дерево каждому"</h4>
+                        <p class="oblast">Московская область</p>
+                        <p class="date">Май 2024</p>
+                    </div>
+                    <div class="info">
+                        <p class="people">100 чел.</p>
+                        <p class="people">100 саженцев</p>
+                    </div>
+                    <a href="#">
+                        <p class="people">Call to action →</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blogblock">
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-126097431&id=456245883&hash=b58ee2e686288b48" frameborder="0 " allowfullscreen="1 " allow="autoplay; encrypted-media; fullscreen; picture-in-picture "></iframe>
+            <div class="textbox ">
+                <h4>Как это было?</h4>
+                <p class="oblast ">Посмотрите съемки к вадрокоптера!</p>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors ">
+        <div class="sponsblock ">
+            <a href="https://t.me/DenisMayorov1 "><img src="./assets/img/logo1.png " alt="img "></a>
+            <a href="https://t.me/DenisMayorov1 "><img src="./assets/img/logo2.png " alt="img "></a>
+            <a href="https://t.me/DenisMayorov1 "><img src="./assets/img/logo3.png " alt="img "></a>
+            <a href="https://t.me/DenisMayorov1 "><img src="./assets/img/logo4.png " alt="img "></a>
+            <a href="https://t.me/DenisMayorov1 "><img src="./assets/img/logo5.png " alt="img "></a>
+        </div>
+    </section>
+    <section class="carousel ">
+        <div class="cartext ">
+            <h4>Как это работает?</h4>
+            <div class="carbox ">
+                <div class="carlist ">
+                    <p class="cartext ">01</p>
+                    <p class="cartext ">Укажите регион, число саженцев и способ участия.</p>
+                </div>
+                <div class="carlist ">
+                    <p class="cartext ">02</p>
+                    <p class="cartext ">Оплатите онлайн удобным способом и получите подтверждение брони.</p>
+                </div>
+                <div class="carlist ">
+                    <p class="cartext ">03</p>
+                    <p class="cartext ">Мы пришлем детали: дату, время, место встречи и что с собой взять.</p>
+                </div>
+                <div class="carlist ">
+                    <p class="cartext ">04</p>
+                    <p class="cartext ">Встретьтесь с координаторами на месте. Все саженцы и инвентарь будут предоставлены.</p>
+                </div>
+                <div class="carlist ">
+                    <p class="cartext ">05</p>
+                    <p class="cartext ">После посадки - фото, видео, сертификат и GPS-координаты вашего участка.</p>
+                </div>
+            </div>
+            <button class="withoutgreen green ">Выбрать формат участия</button>
+        </div>
+        <img src="./assets/img/forest.png " alt="img ">
+    </section>
+    <section class="trust ">
+        <div class="trustup ">
+            <h2>Ваше доверие — наш приоритет</h2>
+            <p>Мы понимаем, что создание леса — это вклад в будущее, требующий длительного ухода. Поэтому мы гарантируем полную открытость на всех этапах нашей работы.</p>
+        </div>
+        <div class="trustdown ">
+            <div class="trustcard ">
+                <p>Каждый посаженный вами участок имеет уникальные GPS-координаты. Вы всегда можете приехать и лично оценить результаты нашей совместной работы.</p>
+            </div>
+            <div class="trustcard ">
+                <p>Договоры, акты выполненных работ и сертификаты — все оформляется официально и в полном соответствии с законодательством.</p>
+            </div>
+            <div class="trustcard ">
+                <p>Мы тесно сотрудничаем с региональными лесничествами и органами власти для успешной реализации наших проектов.
+                </p>
+            </div>
+            <div class="trustcard ">
+                <p>У вас остались вопросы? Наша команда состоит из опытных лесоводов и координаторов, чей суммарный стаж превышает 10 лет.</p>
+            </div>
+        </div>
+    </section>
+    <section class="feedback ">
+        <div class="feedup ">
+            <p class="med ">Остались вопросы?</p>
+            <p class="reg ">Напишите нам, и мы свяжемся с вами в течение 24 часов</p>
+        </div>
+        <div class="feedinp ">
+            <div class="inputup ">
+                <input type="text " placeholder="Ваше имя ">
+                <input type="text " placeholder="Телефон ">
+            </div>
+            <textarea class="message-input " placeholder="Сообщение "></textarea>
+        </div>
+        <div class="feeddown ">
+            <button class="withoutgreen green ">Отправить сообщение</button>
+            <a href="# ">
+                <p class="small ">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footup ">
+            <div class="footleft ">
+                <div class="text ">
+                    <h4>ДеревьЯ</h4>
+                    <p>Сажаем леса вместе</p>
+                </div>
+                <div class="img ">
+                    <a href="https://t.me/DenisMayorov1 "><img src="./assets/icons/tg.svg " alt="tg "></a>
+                    <a href="https://t.me/DenisMayorov1 "><img src="./assets/icons/vk.svg " alt="tg "></a>
+                    <a href="https://t.me/DenisMayorov1 "><img src="./assets/icons/inst.svg " alt="tg "></a>
+                </div>
+            </div>
+            <div class="footright ">
+                <div class="col ">
+                    <p class="up ">Участие</p>
+                    <a href="# ">
+                        <p class="down ">Выбрать посадку</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Для компаний</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Integrations</p>
+                    </a>
+                </div>
+                <div class="col ">
+                    <p class="up ">Информация</p>
+                    <a href="# ">
+                        <p class="down ">История посадок</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Как это работает</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Документы</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Реквизиты</p>
+                    </a>
+                </div>
+                <div class="col ">
+                    <p class="up ">Помощь</p>
+                    <a href="# ">
+                        <p class="down ">Контакты</p>
+                    </a>
+                    <a href="# ">
+                        <p class="down ">Помощь</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footdown ">
+            <p>© 2025 ДеревьЯ. Все права защищены.</p>
+            <p>Сделано с заботой о природе</p>
+        </div>
+    </footer>
+    <script src="script.js "></script>
+</body>
+
+</html>
+
+</html>
+
+</html>
